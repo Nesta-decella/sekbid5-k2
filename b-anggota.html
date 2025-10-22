@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pembuat Website — Seksi Bidang 5</title>
+  <style>
+    :root {
+      --bg:#050507;
+      --panel: rgba(255,255,255,0.03);
+      --accent1:#ffd24d;
+      --accent2:#ffb400;
+      --text:#e9e6e3;
+      --muted:#9b988f;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Rajdhani',sans-serif;
+      background:radial-gradient(1000px 600px at 10% 5%, rgba(255,180,0,0.03), transparent 8%),
+                  linear-gradient(180deg,var(--bg),#000 60%);
+      color:var(--text);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      min-height:100vh;
+      padding:40px 20px;
+    }
+    header{
+      text-align:center;
+      margin-bottom:50px;
+    }
+    header h1{
+      color:var(--accent1);
+      font-size:26px;
+      margin:10px 0 6px 0;
+    }
+    header p{
+      color:var(--muted);
+      margin:0;
+    }
+    .back-btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:8px 16px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.05);
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:#111;
+      font-weight:700;
+      text-decoration:none;
+      transition:all .25s ease;
+    }
+    .back-btn:hover{
+      box-shadow:0 0 25px var(--accent1);
+      transform:translateY(-3px);
+    }
+
+    .container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:40px;
+      justify-items:center;
+      width:100%;
+      max-width:1100px;
+    }
+
+    .card{
+      background:var(--panel);
+      padding:20px;
+      border-radius:18px;
+      text-align:center;
+      transition:transform .3s ease, box-shadow .3s ease;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+    .card:hover{
+      transform:translateY(-10px) rotateX(5deg);
+      box-shadow:0 0 30px var(--accent1);
+    }
+    .card img{
+      width:280px;
+      height:350px;
+      object-fit:cover;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.05);
+      margin-bottom:14px;
+    }
+    .card h3{margin:0;color:var(--accent2);}
+    .card p{color:var(--muted);margin-top:6px;font-size:14px;}
+
+    /* Tombol Instagram */
+    .insta-btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      margin-top:10px;
+      padding:6px 12px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.1);
+      background:linear-gradient(45deg,#ff0069,#ff7a00,#ffd600);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      transition:all .3s ease;
+      font-size:14px;
+    }
+    .insta-btn:hover {
+      transform:translateY(-3px);
+      box-shadow:0 0 15px #ff0069;
+      filter:brightness(1.2);
+    }
+    .insta-btn svg {
+      width:16px;
+      height:16px;
+      fill:#fff;
+    }
+
+    footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      margin-top:60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tim Pembuat Website Seksi Bidang 5</h1>
+    <p>SMKN 5 Bandung — Periode 2024/2025</p>
+    <a href="index.html" class="back-btn">← Kembali ke Halaman Utama</a>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="leon.jpg" alt="Leon">
+      <h3>Leon Arthur Rivanno</h3>
+      <p>Pembuat Struktur Website</p>
+      <a href="https://instagram.com/mrleonzz" target="_blank" class="insta-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.18-30.18C293.56,123,224,123,224,123s-69.56,0-94.53,8.47A54,54,0,0,0,99.29,161.7C90.82,186.67,90.82,256,90.82,256s0,69.56,8.47,94.53a54,54,0,0,0,30.18,30.18C154.44,389,224,389,224,389s69.56,0,94.53-8.47a54,54,0,0,0,30.18-30.18c8.47-24.97,8.47-94.53,8.47-94.53S357.18,186.67,348.71,161.7ZM224,338.67A82.67,82.67,0,1,1,306.67,256,82.77,82.77,0,0,1,224,338.67Zm85.33-148A19.2,19.2,0,1,1,328.53,171,19.21,19.21,0,0,1,309.33,190.67Z"/>
+        </svg>
+        Instagram
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="nesta.jpg" alt="Nesta">
+      <h3>Nesta Decella</h3>
+      <p>Pembuat Website</p>
+      <a href="https://instagram.com/n2zd._" target="_blank" class="insta-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.18-30.18C293.56,123,224,123,224,123s-69.56,0-94.53,8.47A54,54,0,0,0,99.29,161.7C90.82,186.67,90.82,256,90.82,256s0,69.56,8.47,94.53a54,54,0,0,0,30.18,30.18C154.44,389,224,389,224,389s69.56,0,94.53-8.47a54,54,0,0,0,30.18-30.18c8.47-24.97,8.47-94.53,8.47-94.53S357.18,186.67,348.71,161.7ZM224,338.67A82.67,82.67,0,1,1,306.67,256,82.77,82.77,0,0,1,224,338.67Zm85.33-148A19.2,19.2,0,1,1,328.53,171,19.21,19.21,0,0,1,309.33,190.67Z"/>
+        </svg>
+        Instagram
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="z-achmad.jpg" alt="Achmad">
+      <h3>Achmad Rizky Widyatmoko</h3>
+      <p>Editor Laporan / Interview</p>
+      <a href="https://instagram.com/wekemet" target="_blank" class="insta-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.18-30.18C293.56,123,224,123,224,123s-69.56,0-94.53,8.47A54,54,0,0,0,99.29,161.7C90.82,186.67,90.82,256,90.82,256s0,69.56,8.47,94.53a54,54,0,0,0,30.18,30.18C154.44,389,224,389,224,389s69.56,0,94.53-8.47a54,54,0,0,0,30.18-30.18c8.47-24.97,8.47-94.53,8.47-94.53S357.18,186.67,348.71,161.7ZM224,338.67A82.67,82.67,0,1,1,306.67,256,82.77,82.77,0,0,1,224,338.67Zm85.33-148A19.2,19.2,0,1,1,328.53,171,19.21,19.21,0,0,1,309.33,190.67Z"/>
+        </svg>
+        Instagram
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="reivaldy.jpg" alt="Reivaldy">
+      <h3>Reivaldy Imam Ramadhan</h3>
+      <p>Editor Laporan / Dokumentasi</p>
+      <a href="https://instagram.com/reii_ree" target="_blank" class="insta-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.18-30.18C293.56,123,224,123,224,123s-69.56,0-94.53,8.47A54,54,0,0,0,99.29,161.7C90.82,186.67,90.82,256,90.82,256s0,69.56,8.47,94.53a54,54,0,0,0,30.18,30.18C154.44,389,224,389,224,389s69.56,0,94.53-8.47a54,54,0,0,0,30.18-30.18c8.47-24.97,8.47-94.53,8.47-94.53S357.18,186.67,348.71,161.7ZM224,338.67A82.67,82.67,0,1,1,306.67,256,82.77,82.77,0,0,1,224,338.67Zm85.33-148A19.2,19.2,0,1,1,328.53,171,19.21,19.21,0,0,1,309.33,190.67Z"/>
+        </svg>
+        Instagram
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="z-abdul.jpg" alt="Abdul">
+      <h3>Abdul Adziez Adzikri</h3>
+      <p>Testing / Revisi Akhir</p>
+      <a href="https://instagram.com/afterdought_" target="_blank" class="insta-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.18-30.18C293.56,123,224,123,224,123s-69.56,0-94.53,8.47A54,54,0,0,0,99.29,161.7C90.82,186.67,90.82,256,90.82,256s0,69.56,8.47,94.53a54,54,0,0,0,30.18,30.18C154.44,389,224,389,224,389s69.56,0,94.53-8.47a54,54,0,0,0,30.18-30.18c8.47-24.97,8.47-94.53,8.47-94.53S357.18,186.67,348.71,161.7ZM224,338.67A82.67,82.67,0,1,1,306.67,256,82.77,82.77,0,0,1,224,338.67Zm85.33-148A19.2,19.2,0,1,1,328.53,171,19.21,19.21,0,0,1,309.33,190.67Z"/>
+        </svg>
+        Instagram
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024/2025 OSIS SMKN 5 Bandung — Seksi Bidang 5
+  </footer>
+</body>
+</html>
